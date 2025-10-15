@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works | LandChain</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ---------- General Styling ---------- */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7fafd;
+      color: #222;
+    }
+
+    /* ---------- Navbar ---------- */
+    header {
+  background: linear-gradient(90deg, #0d1b2a, #123c52);
+  color: #fff;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 1280px;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: background 0.3s, padding 0.3s;
+}
+
+header.scrolled {
+  background: #0a2536;
+  padding: 0.8rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #21d4fd;
+  letter-spacing: 1.5px;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #21d4fd;
+  transform: translateY(-3px);
+}
+
+.btn {
+  background: #21d4fd;
+  color: #fff !important;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #1a9dcf;
+  transform: scale(1.08);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.9rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+    /* ---------- How It Works Section ---------- */
+    .container {
+      max-width: 1200px;
+      margin: 80px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h2 {
+         margin-top: 120px;
+      font-size: 2.5em;
+      color: #022c43;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      width: 70px;
+      height: 3px;
+      background-color: #00d4ff;
+      margin: 0 auto 50px;
+      border-radius: 2px;
+    }
+
+    /* ---------- Steps Section ---------- */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .step-card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 270px;
+    }
+
+    .step-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .step-number {
+      background: #00d4ff;
+      color: white;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      font-weight: 700;
+      margin: 0 auto 15px;
+      font-size: 1.1em;
+    }
+
+    .step-card img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 20px;
+    }
+
+    .step-card h3 {
+      font-size: 1.3em;
+      color: #022c43;
+      margin-bottom: 10px;
+    }
+
+    .step-card p {
+      color: #555;
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+  background: linear-gradient(90deg, #0d1b2a, #123c52);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.6px;
+}
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 2em;
+      }
+      .step-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+  <nav class="navbar">
+    <div class="logo">LandChain</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="how.html">How It Works</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="btn">Login</a></li>
+    </ul>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </nav>
+</header>
+  <!-- How It Works Section -->
+  <section class="container">
+    <h2>How It Works</h2>
+    <div class="underline"></div>
+
+    <div class="steps">
+      <!-- Step 1 -->
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Register Icon">
+        <h3>Register</h3>
+        <p>Create your account and access the LandChain platform securely.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135712.png" alt="Verify Icon">
+        <h3>Verify</h3>
+        <p>Submit your property details for verification by authorized officials.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Store Icon">
+        <h3>Store</h3>
+        <p>Records are securely stored and encrypted on the blockchain.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3208/3208722.png" alt="Access Icon">
+        <h3>Secure Access</h3>
+        <p>Access verified land records from anywhere, anytime with full transparency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 <span>LandChain</span> | Built with Blockchain Security
+  </footer>
+
+</body>
+</html>
